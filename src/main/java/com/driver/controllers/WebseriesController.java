@@ -21,7 +21,7 @@ public class WebseriesController {
     public int addWebSeries(@RequestBody WebSeriesEntryDto webSeriesEntryDto){
 
         try{
-            return webSeriesService.addWebSeries(webSeriesEntryDto)+25;
+            return webSeriesService.addWebSeries(webSeriesEntryDto);
 
         }catch (Exception e){
             return -1;
